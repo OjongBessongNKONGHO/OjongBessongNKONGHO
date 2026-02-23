@@ -1,44 +1,52 @@
- Hi, I'm Ojong NKONGHO
+# Hi, I'm Ojong NKONGHO
 
-A Computer Science & Engineering student based in Paris, focusing on Data Engineering and Cloud/DevOps.
+Final-year student BSc Computer Science & Engineering DSTI School of Engineering based in Paris, specializing in data-oriented systems and cloud-native development.
 
-I enjoy building systems that are:
-- Reliable
-- Automated
-- Easy to run
-- Designed with long-term maintainability in mind
+I focus on building structured, reliable, and reproducible systems using modern DevOps practices.
 
-Currently looking for an internship or apprenticeship starting September 2026.
+Currently seeking an internship or apprenticeship starting September 2026.
 
 
-### What I Work With
+## Technical Focus
 
-Languages: Python, Java, C++  
-Data: SQL, data cleaning, structured workflows  
-Cloud & DevOps:Docker, GitHub Actions (CI/CD), AWS fundamentals, Linux  
-Concepts: APIs, OOP, reproducible environments, system design basics
+**Languages**  
+Python • Java • C++
+
+**Data & Engineering**  
+SQL • data processing workflows • structured system design
+
+**Cloud & DevOps**  
+Docker • GitHub Actions (CI/CD) • AWS fundamentals • Linux
+
+**Engineering Principles**  
+Object-Oriented Design • separation of concerns • modular architecture • reproducible environments
 
 
 
-## Featured Projects
+## Selected Projects
 
 ### FastAPI DevOps Project
-API built with FastAPI and MariaDB, deployed using Docker with CI/CD integration.
-Includes infrastructure setup and containerized deployment workflow.
+Containerized REST API built with FastAPI and MariaDB.  
+Implemented Docker-based deployment and CI/CD integration.
 
 ### Java Document Management System
-Object-oriented application to manage, archive, and retrieve documents securely.
+Modular OOP application with clear service-layer separation and maintainable architecture.
 
 ### C++ Library Management System
-Console-based system handling borrow/return logic with optimized data structures.
+Console-based system implementing borrowing logic with file-based persistence and structured design.
 
 
-## What I'm Improving
+## Ongoing Development
+
+Currently strengthening my skills in:
 
 - Kubernetes fundamentals  
 - Infrastructure as Code (Terraform)  
-- Building production-ready data pipelines  
+- Scalable data pipelines  
+- Distributed systems  
 
-
+📍 Paris, France  
 📫 nkongho.ojong-bessong@edu.dsti.institute  
-🔗 http://www.linkedin.com/in/nkongho-ojong
+🔗 LinkedIn: http://www.linkedin.com/in/nkongho-ojong
+
+
