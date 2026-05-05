@@ -26,19 +26,19 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 
 ## Selected Projects
 
-###FastAPI DevOps Project
+### FastAPI DevOps Project
 Containerized REST API built with FastAPI and MariaDB. Implemented Docker-based deployment and CI/CD integration via GitHub Actions.
 
-###Weather Dashboard — dashboard-meteo
+### Weather Dashboard — dashboard-meteo
 Interactive weather dashboard built in Python, pulling live data from a public API and visualising it in a clean interface. Focuses on real-time data ingestion and structured display.
 
-###Invoice API — invoice-api
+### Invoice API — invoice-api
 Financial REST API built from scratch in PHP 8.2 with custom routing, PDO database integration and Bearer token authentication. No frameworks used.
 
-###Java Document Management System
+### Java Document Management System
 Modular OOP application with clear service-layer separation and maintainable architecture.
 
-###C++ Library Management System
+### C++ Library Management System
 Console-based system implementing borrowing logic with file-based persistence and structured design.
 
 ## Ongoing Development
