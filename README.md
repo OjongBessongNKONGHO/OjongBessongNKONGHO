@@ -30,7 +30,7 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 Containerized REST API built with FastAPI and MariaDB. Implemented Docker-based deployment and CI/CD integration via GitHub Actions.
 
 ### Weather Dashboard — dashboard-meteo
-Interactive weather dashboard built in Python, pulling live data from a public API and visualising it in a clean interface. Focuses on real-time data ingestion and structured display.
+Interactive weather dashboard built in vanilla JavaScript, consuming three public APIs — REST Countries, Open-Meteo Geocoding, and Open-Meteo Forecast. Features dynamic DOM manipulation, city search, real-time weather display, and a 5-day forecast.
 
 ### Invoice API — invoice-api
 Financial REST API built from scratch in PHP 8.2 with custom routing, PDO database integration and Bearer token authentication. No frameworks used.
