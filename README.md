@@ -35,6 +35,10 @@ Interactive weather dashboard built in vanilla JavaScript, consuming three publi
 ### Invoice API — invoice-api
 Financial REST API built from scratch in PHP 8.2 with custom routing, PDO database integration and Bearer token authentication. No frameworks used.
 
+### Node.js Microservices — node-microservices-invoice
+
+Two independent Node.js services communicating over HTTP. The Auth Service handles user registration, login, and token validation. The Invoice Service handles invoices and delegates all authentication to the Auth Service externally. Built with Express, SQLite, and Axios — no frameworks beyond Express.
+
 ### Java Document Management System
 Modular OOP application with clear service-layer separation and maintainable architecture.
 
