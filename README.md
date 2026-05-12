@@ -30,6 +30,10 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 - 🌦️ **Weather ETL Pipeline** — Airflow • PostgreSQL • Docker • Python
   [View →](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)
 
+  - ⚡ **Kafka Streaming Pipeline** — Kafka • Pydantic v2 • PostgreSQL • Docker • pytest
+  [View →](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)
+
+
 ### 💻 Software Engineering
 - **FastAPI DevOps Project** — Python • FastAPI • Docker • GitHub Actions CI/CD
   [View →](https://github.com/OjongBessongNKONGHO/fastapi-devops-project)
@@ -47,10 +51,10 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 ## Ongoing Development
 
 Currently strengthening my skills in:
-- Kafka for real-time data streaming
 - Kubernetes fundamentals
 - Infrastructure as Code (Terraform)
-- Scalable distributed data pipelines
+- DuckDB for analytical workloads
+- Scalable distributed data pipelines on AWS
 
 
 📍 Paris, France  
