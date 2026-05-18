@@ -33,6 +33,9 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   - ⚡ **Kafka Streaming Pipeline** — Kafka • Pydantic v2 • PostgreSQL • Docker • pytest
   [View →](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)
 
+- ☁️ **AWS Data Platform** — Terraform • AWS EC2 • RDS • S3 • CloudWatch
+  [View →](https://github.com/OjongBessongNKONGHO/aws-data-platform)
+
 
 ### 💻 Software Engineering
 - **FastAPI DevOps Project** — Python • FastAPI • Docker • GitHub Actions CI/CD
