@@ -53,11 +53,12 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   
 ## Ongoing Development
 
+
 Currently strengthening my skills in:
+- Apache Spark for large-scale data processing
 - Kubernetes fundamentals
-- Infrastructure as Code (Terraform)
 - DuckDB for analytical workloads
-- Scalable distributed data pipelines on AWS
+- Real-time ML pipelines
 
 
 📍 Paris, France  
