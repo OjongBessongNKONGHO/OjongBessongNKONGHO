@@ -30,7 +30,7 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 - 🌦️ **Weather ETL Pipeline** — Airflow • PostgreSQL • Docker • Python
   [View →](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)
 
-  - ⚡ **Kafka Streaming Pipeline** — Kafka • Pydantic v2 • PostgreSQL • Docker • pytest
+- ⚡ **Kafka Streaming Pipeline** — Kafka • Pydantic v2 • PostgreSQL • Docker • pytest
   [View →](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)
 
 - ☁️ **AWS Data Platform** — Terraform • AWS EC2 • RDS • S3 • CloudWatch
@@ -38,8 +38,7 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 
 
 ### 💻 Software Engineering
-- **FastAPI DevOps Project** — Python • FastAPI • Docker • GitHub Actions CI/CD
-  [View →](https://github.com/OjongBessongNKONGHO/fastapi-devops-project)
+
 - **Weather Dashboard** — JavaScript • REST Countries API • Open-Meteo API • DOM manipulation
   [View →](https://github.com/OjongBessongNKONGHO/dashboard-meteo)
 - **Node.js Microservices** — Express • SQLite • Axios • Auth Service • Invoice Service
@@ -50,6 +49,8 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   [View →](https://github.com/OjongBessongNKONGHO/java-document-management)
 - **C++ Library Management** — C++ • OOP • File-based persistence
   [View →](https://github.com/OjongBessongNKONGHO/cpp-library-management)
+- **FastAPI DevOps Project** — Python • FastAPI • Docker • GitHub Actions CI/CD
+  [View →](https://github.com/OjongBessongNKONGHO/fastapi-devops-project)
   
 ## Ongoing Development
 
