@@ -9,13 +9,13 @@ Currently seeking a Data Engineering internship from July 2026 and an apprentice
 ## Technical Focus
 
 **Languages**  
-Python • SQL • R • Java • C++ • PHP
+Python • SQL • R • Java • C++
 
 **Data & Engineering**  
-Kafka • Hadoop • Spark • Hive • HDFS • ETL/ELT • data pipelines • large-scale data processing • structured system design
+Kafka • Airflow • Spark • Hadoop • Hive • HDFS • ETL/ELT • data pipelines • large-scale data processing
 
 **Cloud & DevOps**  
-AWS (EC2, S3, IAM) • Docker • GitHub Actions (CI/CD) • Azure (notions) • Linux
+AWS (EC2, S3, IAM, RDS, CloudWatch) • Terraform • Docker • GitHub Actions (CI/CD) • Linux
 
 **Databases**
 MySQL • PostgreSQL • MongoDB (notions) • SQL advanced queries
@@ -49,9 +49,7 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   [View →](https://github.com/OjongBessongNKONGHO/java-document-management)
 - **C++ Library Management** — C++ • OOP • File-based persistence
   [View →](https://github.com/OjongBessongNKONGHO/cpp-library-management)
-- **FastAPI DevOps Project** — Python • FastAPI • Docker • GitHub Actions CI/CD
-  [View →](https://github.com/OjongBessongNKONGHO/fastapi-devops-project)
-  
+
 ## Ongoing Development
 
 Currently strengthening my skills in:
