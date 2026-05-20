@@ -54,13 +54,12 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   
 ## Ongoing Development
 
-
 Currently strengthening my skills in:
 - Apache Spark for large-scale data processing
 - Kubernetes fundamentals
 - DuckDB for analytical workloads
 - Real-time ML pipelines
-
+- AWS Academy Data Engineering — enrolled (DSTI x AWS, 2026)
 
 📍 Paris, France  
 📫 nkongho.ojong-bessong@edu.dsti.institute  
