@@ -12,7 +12,7 @@ Currently seeking a Data Engineering internship from July 2026 and an apprentice
 Python • SQL • R • Java • C++
 
 **Data & Engineering**  
-Kafka • Airflow • Spark • Hadoop • Hive • HDFS • ETL/ELT • data pipelines • large-scale data processing
+Kafka • Airflow • dbt • Spark • Hadoop • Hive • HDFS • ETL/ELT • data pipelines • large-scale data processing
 
 **Cloud & DevOps**  
 AWS (EC2, S3, IAM, RDS, CloudWatch) • Terraform • Docker • GitHub Actions (CI/CD) • Linux
