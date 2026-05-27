@@ -36,6 +36,8 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 - ☁️ **AWS Data Platform** — Terraform • AWS EC2 • RDS • S3 • CloudWatch
   [View →](https://github.com/OjongBessongNKONGHO/aws-data-platform)
 
+- 🦆 **DuckDB Analytics Layer** — DuckDB • Pandas • PyArrow • Click • pytest 
+[View →](https://github.com/OjongBessongNKONGHO/duckdb-analytics)
 
 ### 💻 Software Engineering
 
@@ -55,7 +57,6 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 Currently strengthening my skills in:
 - Apache Spark for large-scale data processing
 - Kubernetes fundamentals
-- DuckDB for analytical workloads
 - Real-time ML pipelines
 - AWS Academy Data Engineering — enrolled (DSTI x AWS, 2026)
 
