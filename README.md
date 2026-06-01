@@ -53,12 +53,8 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   [View →](https://github.com/OjongBessongNKONGHO/cpp-library-management)
 
 ## Ongoing Development
+Currently exploring: Spark at scale for distributed data processing, Kubernetes orchestration for data workloads, and real-time ML pipelines.
 
-Currently strengthening my skills in:
-- Apache Spark for large-scale data processing
-- Kubernetes fundamentals
-- Real-time ML pipelines
-- AWS Academy Data Engineering — enrolled (DSTI x AWS, 2026)
 
 📍 Paris, France  
 📫 nkongho.ojong-bessong@edu.dsti.institute  
