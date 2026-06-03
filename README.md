@@ -2,9 +2,9 @@
 
 Final-year BSc student in Computer Science & Engineering at DSTI School of Engineering, Paris, specializing in Data Engineering and cloud-native development. Pre-admitted to the MSc Data Engineering & AI starting September 2026.
 
-I build structured, reliable and reproducible data systems using modern DevOps and engineering practices.
+I build data systems that work in production. Not notebooks, not tutorials.
 
-Currently seeking a Data Engineering internship from July 2026 and an apprenticeship from September 2026.
+Currently seeking a Data Engineering internship from 6 July 2026 and an apprenticeship from September 2026.
 
 ## Technical Focus
 
@@ -39,7 +39,7 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 - 🦆 **DuckDB Analytics Layer** — DuckDB • Pandas • PyArrow • Click • pytest 
 [View →](https://github.com/OjongBessongNKONGHO/duckdb-analytics)
 
-- ⚡ **Spark Streaming Pipeline** — Spark Structured Streaming • Kafka • Delta Lake • dbt • Airflow • Terraform
+- 🔥 **Spark Streaming Pipeline** — Spark Structured Streaming • Kafka • Delta Lake • dbt • Airflow • Terraform
   [View →](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)
 
 ### 💻 Software Engineering
