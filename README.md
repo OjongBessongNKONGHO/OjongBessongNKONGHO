@@ -39,6 +39,9 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 - 🦆 **DuckDB Analytics Layer** — DuckDB • Pandas • PyArrow • Click • pytest 
 [View →](https://github.com/OjongBessongNKONGHO/duckdb-analytics)
 
+- ⚡ **Spark Streaming Pipeline** — Spark Structured Streaming • Kafka • Delta Lake • dbt • Airflow • Terraform
+  [View →](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)
+
 ### 💻 Software Engineering
 
 - **Weather Dashboard** — JavaScript • REST Countries API • Open-Meteo API • DOM manipulation
@@ -53,8 +56,8 @@ Object-Oriented Design • separation of concerns • modular architecture • r
   [View →](https://github.com/OjongBessongNKONGHO/cpp-library-management)
 
 ## Ongoing Development
-Currently exploring: Spark at scale for distributed data processing, Kubernetes orchestration for data workloads, and real-time ML pipelines.
 
+Currently building Project 5: a production-grade Spark Structured Streaming pipeline with Kafka, Delta Lake, dbt, Airflow and Terraform. Next up: Kubernetes orchestration for data workloads and real-time ML pipelines.
 
 📍 Paris, France  
 📫 nkongho.ojong-bessong@edu.dsti.institute  
