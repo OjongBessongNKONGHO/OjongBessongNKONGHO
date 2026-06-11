@@ -57,7 +57,9 @@ Object-Oriented Design • separation of concerns • modular architecture • r
 
 ## Ongoing Development
 
-Currently building Project 5: a production-grade Spark Structured Streaming pipeline with Kafka, Delta Lake, dbt, Airflow and Terraform. Next up: Kubernetes orchestration for data workloads and real-time ML pipelines.
+Project 5 (Spark Structured Streaming pipeline with Kafka, Delta Lake, dbt, Airflow and Terraform) is now deployed and verified running live on AWS — Spark Structured Streaming writing in real time to S3 Delta Lake from an EC2 instance provisioned entirely with Terraform. Currently finishing the Airflow and dbt orchestration layer.
+
+Next up: Kubernetes orchestration for data workloads and real-time ML pipelines.
 
 📍 Paris, France  
 📫 nkongho.ojong-bessong@edu.dsti.institute  
