@@ -1,6 +1,6 @@
 # Ojong Bessong NKONGHO
 
-Final-year BSc student in Computer Science & Engineering at DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering & AI starting September 2026. Previously at Boston University School of Medicine — RNA-seq pipelines on a Linux HPC cluster.
+Final-year BSc student in Computer Science & Engineering at DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering & AI starting September 2026. Previously Data Analyst Intern at Boston University School of Medicine, processing large-scale RNA-seq datasets in R on a Linux HPC cluster.
 
 I build backend systems and data pipelines that run in production. Not notebooks, not tutorials.
 
