@@ -4,7 +4,7 @@ Final-year BSc Computer Science & Engineering, DSTI School of Engineering, Paris
 
 I build data pipelines and backend systems that run in production — not notebooks, not tutorials. Every project here has tests, CI, and a README documenting the real bugs I hit and how I fixed them.
 
-**Open to a Data Engineering or Backend Software Engineering internship from 6 July 2026, and an apprenticeship from September 2026.**
+**Open to a Data Engineering internship from 6 July 2026, and an apprenticeship from September 2026 — also open to backend engineering roles.**
 
 ---
 
@@ -17,9 +17,6 @@ I build data pipelines and backend systems that run in production — not notebo
 **[Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)**
 Real-time data lakehouse: Kafka → Spark Structured Streaming → Delta Lake on S3, with dbt and Airflow on top, deployed on AWS EC2 with Terraform. 46 tests. The most complete system in this portfolio — every layer of a modern data stack, wired together.
 
-**[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
-A FastAPI service exposing the data the pipelines collect — authenticated, rate-limited, deployed live on Railway. 38 tests, four of which mock an external API entirely with `unittest.mock` so the suite never touches the network. README documents the exact bug that caused a 500 and how I traced it to a missing SQLAlchemy relationship.
-
 **[AWS Data Platform](https://github.com/OjongBessongNKONGHO/aws-data-platform)**
 42 AWS resources provisioned with one `terraform apply` — VPC, private RDS, encrypted S3, CloudWatch alarms wired to SNS. Built in modules so each piece is independently testable and reusable.
 
@@ -31,6 +28,9 @@ A FastAPI service exposing the data the pipelines collect — authenticated, rat
 
 **[Weather ETL Pipeline](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)**
 The project I started with. Airflow DAG with a dedicated data-quality stage that fails the run before bad data reaches PostgreSQL. 37 tests.
+
+**[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
+A FastAPI service exposing the data the pipelines collect — authenticated, rate-limited, deployed live on Railway. 38 tests, four of which mock an external API entirely with `unittest.mock` so the suite never touches the network. README documents the exact bug that caused a 500 and how I traced it to a missing SQLAlchemy relationship.
 
 ---
 
