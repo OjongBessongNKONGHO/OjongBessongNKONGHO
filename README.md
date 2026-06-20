@@ -1,63 +1,45 @@
 # Ojong Bessong NKONGHO
 
-Final-year BSc student in Computer Science & Engineering at DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering & AI starting September 2026. Previously Data Analyst Intern at Boston University School of Medicine, processing large-scale RNA-seq datasets in R on a Linux HPC cluster.
+Final-year BSc Computer Science & Engineering, DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering and AI, September 2026.
 
-I build backend systems and data pipelines that run in production. Not notebooks, not tutorials.
+I build data pipelines and backend systems that run in production — not notebooks, not tutorials. Every project here has tests, CI, and a README documenting the real bugs I hit and how I fixed them.
 
-**Open to opportunities — Data Engineering or Backend Software Engineering internship from 6 July 2026 and apprenticeship from September 2026.**
-
-## Technical Focus
-
-**Languages**
-Python • SQL • R • Java • C++ • JavaScript • PHP
-
-**Backend & APIs**
-FastAPI • Flask • SQLAlchemy • Pydantic v2 • REST API design • API key authentication • rate limiting
-
-**Data & Engineering**
-Kafka • Airflow • dbt • Spark • Delta Lake • DuckDB • ETL/ELT • data pipelines • large-scale data processing
-
-**Cloud & DevOps**
-AWS (EC2, S3, IAM, RDS, CloudWatch) • Terraform • Docker • GitHub Actions (CI/CD) • Linux
-
-**Databases**
-PostgreSQL • MySQL • DuckDB • Delta Lake • MongoDB (notions)
-
-**Engineering Principles**
-Separation of concerns • layered architecture • test-driven development • reproducible environments
-
-## Selected Projects
-
-### 🔧 Data Engineering
-
-- 🔥 **Spark Streaming Pipeline** — Spark Structured Streaming • Kafka • Delta Lake • dbt • Airflow • Terraform • AWS • 46 tests
-  [View →](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)
-
-- ☁️ **AWS Data Platform** — Terraform • 41 AWS resources • EC2 • RDS • S3 • CloudWatch • IAM
-  [View →](https://github.com/OjongBessongNKONGHO/aws-data-platform)
-
-- ⚡ **Kafka Streaming Pipeline** — Kafka • Pydantic v2 • PostgreSQL • Docker • 20+ tests
-  [View →](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)
-
-- 🦆 **DuckDB Analytics Layer** — DuckDB • PyArrow • Click • APScheduler • 35 tests
-  [View →](https://github.com/OjongBessongNKONGHO/duckdb-analytics)
-
-- 🌦️ **Weather ETL Pipeline** — Airflow • PostgreSQL • Docker • 20 tests
-  [View →](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)
-
-### 💻 Backend Software Engineering
-
-- 🌐 **Weather API** — FastAPI • PostgreSQL • SQLAlchemy • Pydantic v2 • Docker • 31 tests • CI green
-  [View →](https://github.com/OjongBessongNKONGHO/weather-api)
-
-- 🔗 **Node.js Microservices** — Express • SQLite • Axios • Auth Service • Invoice Service
-  [View →](https://github.com/OjongBessongNKONGHO/node-microservices-invoice)
-
-- 🧾 **Invoice API** — PHP 8.2 • PDO • Bearer token auth • Custom routing • No frameworks
-  [View →](https://github.com/OjongBessongNKONGHO/invoice-api)
+**Open to a Data Engineering or Backend Software Engineering internship from 6 July 2026, and an apprenticeship from September 2026.**
 
 ---
 
-📍 Paris, France
-📫 nkongho.ojong-bessong@edu.dsti.institute
-🔗 [LinkedIn](http://www.linkedin.com/in/nkongho-ojong)
+**Live right now:** [Weather API](https://weather-api-production-1781.up.railway.app/docs) — a REST API serving real-time weather data for 21 cities. Click through, authorize with the key in the README, and try it.
+
+---
+
+## What I've built
+
+**[Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)**
+Real-time data lakehouse: Kafka → Spark Structured Streaming → Delta Lake on S3, with dbt and Airflow on top, deployed on AWS EC2 with Terraform. 46 tests. The most complete system in this portfolio — every layer of a modern data stack, wired together.
+
+**[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
+A FastAPI service exposing the data the pipelines collect — authenticated, rate-limited, deployed live on Railway. 38 tests, four of which mock an external API entirely with `unittest.mock` so the suite never touches the network. README documents the exact bug that caused a 500 and how I traced it to a missing SQLAlchemy relationship.
+
+**[AWS Data Platform](https://github.com/OjongBessongNKONGHO/aws-data-platform)**
+42 AWS resources provisioned with one `terraform apply` — VPC, private RDS, encrypted S3, CloudWatch alarms wired to SNS. Built in modules so each piece is independently testable and reusable.
+
+**[Kafka Streaming Pipeline](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)**
+12 cities, 6 continents, three-topic architecture separating raw/validated/invalid messages, dead letter queue with a standalone reprocessing script. 44 tests.
+
+**[DuckDB Analytics](https://github.com/OjongBessongNKONGHO/duckdb-analytics)**
+12 OLAP queries over the pipeline data — anomaly detection, correlation analysis, hourly patterns — with 8 data quality checks running before any analysis touches the data. 35 tests.
+
+**[Weather ETL Pipeline](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)**
+The project I started with. Airflow DAG with a dedicated data-quality stage that fails the run before bad data reaches PostgreSQL. 37 tests.
+
+---
+
+## Stack
+
+Python, SQL, FastAPI, SQLAlchemy, Pydantic v2 · Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB · AWS, Terraform, Docker, Railway, GitHub Actions · PostgreSQL
+
+---
+
+Previously a Data Analyst Intern at Boston University School of Medicine, processing RNA-seq genomic datasets in R on a Linux HPC cluster — where I learned that in research, data quality isn't optional, it's the whole job.
+
+📍 Paris · nkongho.ojong-bessong@edu.dsti.institute · [LinkedIn](http://www.linkedin.com/in/nkongho-ojong)
