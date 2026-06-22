@@ -40,6 +40,6 @@ Python, SQL, FastAPI, SQLAlchemy, Pydantic v2 · Kafka, Spark, Airflow, dbt, Del
 
 ---
 
-Previously at Boston University School of Medicine, processing bulk RNA-seq datasets in R on a Linux HPC cluster. Reproducibility requirements there were strict enough that cutting corners showed up immediately in the results.
+Previously Data Analyst Intern at Boston University School of Medicine, processing bulk RNA-seq datasets in R on a Linux HPC cluster. Reproducibility requirements there were strict enough that cutting corners showed up immediately in the results.
 
 📍 Paris · nkongho.ojong-bessong@edu.dsti.institute · [LinkedIn](http://www.linkedin.com/in/nkongho-ojong)
