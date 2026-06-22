@@ -2,7 +2,7 @@
 
 Final-year BSc Computer Science & Engineering, DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering and AI, September 2026.
 
-Six data engineering systems built from scratch this year. All of them run. All of them have tests. The READMEs document what broke during deployment and how I fixed it — because that is the part that actually takes time.
+Six data engineering systems built from scratch this year. All of them run. All of them have tests. The READMEs document what broke during deployment and how I fixed it, because that is the part that actually takes time.
 
 **Open to a Data Engineering internship from 6 July 2026, and an apprenticeship from September 2026 — also open to backend engineering roles.**
 
