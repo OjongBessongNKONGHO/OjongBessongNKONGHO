@@ -15,10 +15,10 @@ Six data engineering systems built from scratch this year. All of them run. All 
 ## What I've built
 
 **[Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)**
-Kafka → Spark Structured Streaming → Delta Lake on S3, dbt on top, Airflow orchestrating, Terraform provisioning the AWS infrastructure. Deployed on EC2. Five production incidents documented in the README — S3AFileSystem ClassNotFoundException, AMI drift forcing instance replacement on every terraform apply, environment variables not propagating from .env into docker-compose. 46 tests.
+Kafka → Spark Structured Streaming → Delta Lake on S3, dbt on top, Airflow orchestrating, Terraform provisioning the AWS infrastructure. Deployed on EC2. Batch analysis runs as a separate Docker container triggered by Airflow — not inside the scheduler's own process — so a dependency conflict in one can never take down the other. Local development runs entirely against MinIO, an S3-compatible store, so the full pipeline is testable without real AWS credentials on a dev machine. Five production incidents documented in the README — S3AFileSystem ClassNotFoundException, AMI drift forcing instance replacement on every terraform apply, environment variables not propagating from .env into docker-compose. 46 tests.
 
 **[AWS Data Platform](https://github.com/OjongBessongNKONGHO/aws-data-platform)**
-42 AWS resources in one terraform apply. VPC, private RDS, encrypted S3 data lake, five CloudWatch alarms wired to SNS. Five independent Terraform modules — networking, compute, storage, database, monitoring.
+42 AWS resources in one terraform apply. VPC, private RDS, encrypted S3 data lake, five CloudWatch alarms wired to SNS. Five independent Terraform modules — networking, compute, storage, database, monitoring. A separate boto3 script verifies teardown is actually clean — checking AWS directly by tag after `terraform destroy`, since a destroy can report success while a resource silently fails to delete and keeps billing. 16 tests.
 
 **[Kafka Streaming Pipeline](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)**
 Three-topic architecture separating raw, validated and invalid messages. Dead letter queue with a standalone reprocessing script and a monitoring script that reports message counts, error breakdowns and oldest unresolved message age. 53 tests.
@@ -31,6 +31,7 @@ Airflow DAG with a validation task between transform and load. Seven quality che
 
 **[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
 FastAPI, PostgreSQL, deployed live. Authenticated, rate-limited, with request logging middleware, structured logging, Alembic migrations and database latency monitoring on the health endpoint. The README documents the exact 500 error I hit and how I traced it to a missing SQLAlchemy relationship. 41 tests, three of which verify the 60/minute rate limit actually rejects a 61st request.
+
 ---
 
 ## Stack
