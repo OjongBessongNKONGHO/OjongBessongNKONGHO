@@ -21,17 +21,16 @@ Kafka → Spark Structured Streaming → Delta Lake on S3, dbt on top, Airflow o
 42 AWS resources in one terraform apply. VPC, private RDS, encrypted S3 data lake, five CloudWatch alarms wired to SNS. Five independent Terraform modules — networking, compute, storage, database, monitoring.
 
 **[Kafka Streaming Pipeline](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)**
-Three-topic architecture separating raw, validated and invalid messages. Dead letter queue with a standalone reprocessing script and a monitoring script that reports message counts, error breakdowns and oldest unresolved message age. 44 tests.
+Three-topic architecture separating raw, validated and invalid messages. Dead letter queue with a standalone reprocessing script and a monitoring script that reports message counts, error breakdowns and oldest unresolved message age. 53 tests.
 
 **[DuckDB Analytics](https://github.com/OjongBessongNKONGHO/duckdb-analytics)**
-12 OLAP queries — anomaly detection, temperature-humidity correlation, hourly patterns. Eight data quality checks run before any query touches the data. 35 tests.
+14 OLAP queries — anomaly detection, temperature-humidity correlation, hourly patterns, data freshness monitoring, month-over-month trend analysis. Eight data quality checks run before any query touches the data. 37 tests.
 
 **[Weather ETL Pipeline](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)**
 Airflow DAG with a validation task between transform and load. Seven quality checks. If one fails, the DAG fails — bad data does not reach PostgreSQL. 37 tests.
 
 **[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
-FastAPI, PostgreSQL, deployed live. Authenticated, rate-limited, with request logging middleware, structured logging, Alembic migrations and database latency monitoring on the health endpoint. The README documents the exact 500 error I hit and how I traced it to a missing SQLAlchemy relationship. 38 tests, four of which mock the OpenWeatherMap HTTP layer entirely.
-
+FastAPI, PostgreSQL, deployed live. Authenticated, rate-limited, with request logging middleware, structured logging, Alembic migrations and database latency monitoring on the health endpoint. The README documents the exact 500 error I hit and how I traced it to a missing SQLAlchemy relationship. 41 tests, three of which verify the 60/minute rate limit actually rejects a 61st request.
 ---
 
 ## Stack
