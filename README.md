@@ -28,5 +28,4 @@ Airflow DAG with a validation task between transform and load. Seven quality che
 Python, SQL, FastAPI, SQLAlchemy 2.0 async, Pydantic v2, fastavro, Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB, Prometheus, Grafana, AWS, Terraform, Docker, GitHub Actions, PostgreSQL, psycopg3
 
 Previously Data Analyst Intern at Boston University School of Medicine, processing bulk RNA-seq datasets in R on a Linux HPC cluster. Reproducibility requirements were strict enough that cutting corners showed up immediately in the results.
-
-📍 Paris · nkongho.ojong-bessong@edu.dsti.institute · LinkedIn
+📍 Paris · [nkongho.ojong-bessong@edu.dsti.institute](mailto:nkongho.ojong-bessong@edu.dsti.institute) · [LinkedIn](https://www.linkedin.com/in/nkongho-ojong)
