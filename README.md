@@ -1,45 +1,35 @@
-# Ojong Bessong NKONGHO
+Ojong Bessong NKONGHO
 
-Final-year BSc Computer Science & Engineering, DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering and AI, September 2026.
+Final-year BSc Computer Science & Engineering at DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering and AI, September 2026.
+This year I built six data engineering systems from scratch. Two of them crashed in production. I fixed both. The READMEs say what broke and why because that is the part worth documenting.
+Available for a Data Engineering internship immediately, and an apprenticeship from September 2026.
 
-Six data engineering systems built from scratch this year. All of them run. All of them have tests. The READMEs document what broke during deployment and how I fixed it, because that is the part that actually takes time.
+Projects
 
-**Open to a Data Engineering internship from 6 July 2026, and an apprenticeship from September 2026 — also open to backend engineering roles.**
+Weather API
+FastAPI service on PostgreSQL, authenticated and rate-limited. I migrated the database layer to async SQLAlchemy 2.0 with psycopg3, which surfaced a production crash I traced to a pool misconfiguration and a separate CI failure caused by SQLite rejecting pool arguments it doesn't support. Both fixed. I then instrumented the service with Prometheus and Grafana, writing a custom ASGI middleware that records request duration by route template rather than raw path — the difference matters because raw paths create one time series per city name, per typo, per scanner probe. 41 tests.
 
----
+Kafka Streaming Pipeline
+Real-time pipeline for 21 cities. Messages that fail validation go to a dead letter queue with a monitoring script and a reprocessing script. I added Avro serialization with BACKWARD compatibility enforced by Confluent Schema Registry — the registry rejects breaking changes before they reach consumers. The serializer implements the Confluent wire format so any compatible consumer can identify the schema from the message bytes. I also built a data contract layer that validates business rules at the pipeline entry point: temperature within earthly range, humidity as a percentage, timestamps not in the future. 90 tests.
 
-**Live right now:** [Weather API](https://weather-api-production-1781.up.railway.app/docs) — authenticated, rate-limited, deployed on Railway. Authorize with the key in the README and call it.
+Spark Streaming Pipeline
+Kafka into Spark Structured Streaming into Delta Lake, dbt transformations on top, Airflow orchestrating the whole thing. Batch analysis runs in its own Docker container rather than inside the Airflow scheduler so a broken dependency in one cannot affect the other. I wrote a Delta Lake maintenance job that compacts the small files streaming creates and physically removes orphaned data files. Local development runs against MinIO so nothing needs real AWS credentials. 56 tests.
 
----
+AWS Data Platform
+44 AWS resources across five Terraform modules. I added an S3 VPC Gateway Endpoint with a policy that restricts it to the data lake bucket only — without the policy, the endpoint allows traffic to any S3 bucket in any account, which is a data exfiltration path. I also wrote a boto3 script that verifies teardown is actually complete by querying AWS by resource tag after terraform destroy, because destroy can report success while a resource silently fails to delete. 16 tests.
 
-## What I've built
+DuckDB Analytics
+14 OLAP queries on weather data. Eight data quality checks run before any query executes. Results export to Parquet with Snappy compression. 37 tests.
 
-**[Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)**
-Kafka → Spark Structured Streaming → Delta Lake on S3, dbt on top, Airflow orchestrating, Terraform provisioning the AWS infrastructure. Deployed on EC2. Batch analysis runs as a separate Docker container triggered by Airflow — not inside the scheduler's own process — so a dependency conflict in one can never take down the other. Local development runs entirely against MinIO, an S3-compatible store, so the full pipeline is testable without real AWS credentials on a dev machine. Five production incidents documented in the README — S3AFileSystem ClassNotFoundException, AMI drift forcing instance replacement on every terraform apply, environment variables not propagating from .env into docker-compose. 46 tests.
+Weather ETL Pipeline
+Hourly Airflow pipeline. A validation task sits between transform and load. If it fails, the DAG fails. Bad data does not reach PostgreSQL. 37 tests.
 
-**[AWS Data Platform](https://github.com/OjongBessongNKONGHO/aws-data-platform)**
-42 AWS resources in one terraform apply. VPC, private RDS, encrypted S3 data lake, five CloudWatch alarms wired to SNS. Five independent Terraform modules — networking, compute, storage, database, monitoring. A separate boto3 script verifies teardown is actually clean — checking AWS directly by tag after `terraform destroy`, since a destroy can report success while a resource silently fails to delete and keeps billing. 16 tests.
 
-**[Kafka Streaming Pipeline](https://github.com/OjongBessongNKONGHO/kafka-streaming-pipeline)**
-Three-topic architecture separating raw, validated and invalid messages. Dead letter queue with a standalone reprocessing script and a monitoring script that reports message counts, error breakdowns and oldest unresolved message age. 53 tests.
+Stack
+Python, SQL, FastAPI, SQLAlchemy 2.0 async, Pydantic v2, fastavro, Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB, Prometheus, Grafana, AWS, Terraform, Docker, GitHub Actions, PostgreSQL, psycopg3
 
-**[DuckDB Analytics](https://github.com/OjongBessongNKONGHO/duckdb-analytics)**
-14 OLAP queries — anomaly detection, temperature-humidity correlation, hourly patterns, data freshness monitoring, month-over-month trend analysis. Eight data quality checks run before any query touches the data. 37 tests.
+Previously Data Analyst Intern at Boston University School of Medicine, processing bulk RNA-seq datasets in R on a Linux HPC cluster.
 
-**[Weather ETL Pipeline](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)**
-Airflow DAG with a validation task between transform and load. Seven quality checks. If one fails, the DAG fails — bad data does not reach PostgreSQL. 37 tests.
+📍 Paris, nkongho.ojong-bessong@edu.dsti.institute, LinkedIn
 
-**[Weather API](https://github.com/OjongBessongNKONGHO/weather-api)**
-FastAPI, PostgreSQL, deployed live. Authenticated, rate-limited, with request logging middleware, structured logging, Alembic migrations and database latency monitoring on the health endpoint. The README documents the exact 500 error I hit and how I traced it to a missing SQLAlchemy relationship. 41 tests, three of which verify the 60/minute rate limit actually rejects a 61st request.
 
----
-
-## Stack
-
-Python, SQL, FastAPI, SQLAlchemy, Pydantic v2 · Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB · AWS, Terraform, Docker, Railway, GitHub Actions · PostgreSQL
-
----
-
-Previously Data Analyst Intern at Boston University School of Medicine, processing bulk RNA-seq datasets in R on a Linux HPC cluster. Reproducibility requirements there were strict enough that cutting corners showed up immediately in the results.
-
-📍 Paris · nkongho.ojong-bessong@edu.dsti.institute · [LinkedIn](http://www.linkedin.com/in/nkongho-ojong)
