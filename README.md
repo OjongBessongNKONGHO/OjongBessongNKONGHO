@@ -25,7 +25,7 @@ Real-time pipeline for 21 cities across 6 continents. Dead letter queue with a s
 14 OLAP queries covering anomaly detection, temperature-humidity correlation, hourly patterns, data freshness monitoring and month-over-month trend analysis. Eight data quality checks run before any query executes. Parquet export with Snappy compression via PyArrow, Click CLI, APScheduler for hourly runs. 37 tests.
 
 ### [Weather ETL Pipeline](https://github.com/OjongBessongNKONGHO/weather-etl-pipeline)
-Airflow DAG with a validation task between transform and load. Seven quality checks. If one fails, the DAG fails. Bad data does not reach PostgreSQL. 37 tests.
+Airflow DAG with a validation task between transform and load. Seven quality checks. If one fails, the DAG fails. Bad data does not reach PostgreSQL. 48 tests.
 
 ### Stack
 Python, SQL, FastAPI, SQLAlchemy 2.0 async, Pydantic v2, fastavro, Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB, Prometheus, Grafana, AWS, Terraform, Docker, GitHub Actions, PostgreSQL, psycopg3
