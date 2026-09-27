@@ -12,7 +12,7 @@ Open to Data Engineering or Backend Engineering roles — internship from Januar
 
 ### [WSI Processing Pipeline](https://github.com/OjongBessongNKONGHO/wsi-processing-pipeline) *(current — BU internship)*
 
-Whole-slide pathology images are gigapixel-scale and cannot be fed directly into any model. This pipeline segments the tissue, extracts patches, and runs them through UNI2-h and TITAN to produce feature embeddings for downstream lung cancer classification. Runs on BU's HPC cluster with SLURM job submission. Config-driven so lab members edit a YAML file instead of memorizing CLI flags. Images are downloaded in batches and deleted after extraction to stay within storage limits. Downstream model training via Patho-Bench. Python, SLURM, HPC.
+Whole-slide pathology images are gigapixel-scale and cannot be fed directly into any model. This pipeline segments the tissue, extracts patches, and runs them through UNI2-h and TITAN to produce feature embeddings for downstream lung cancer classification. Runs on BU's HPC cluster with SLURM job submission. Config-driven so lab members edit a CSV file instead of memorizing CLI flags. Validates every parameter against an encoder registry of 33 patch encoders and 12 slide encoders before touching a GPU. 18 tests.
 
 ### [Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)
 
