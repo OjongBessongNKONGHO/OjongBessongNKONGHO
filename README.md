@@ -4,7 +4,7 @@ Data Engineering Intern at Boston University School of Medicine. Final-year BSc 
 
 I build data systems that reach production. Two of them crashed this year. I diagnosed and fixed both in production. The READMEs document what broke and why, because that is the part worth reading.
 
-Open to Data Engineering or Backend Engineering roles — internship from January 2027, apprenticeship from March 2027.
+Open to Data Engineering or Backend Engineering roles. Internship from January 2027, apprenticeship from January 2027.
 
 ---
 
