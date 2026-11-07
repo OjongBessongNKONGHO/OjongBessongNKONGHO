@@ -1,10 +1,12 @@
 ## Ojong Bessong NKONGHO
 
-Data Engineering Intern at Boston University School of Medicine. Final-year BSc Computer Science & Engineering, DSTI School of Engineering, Paris. Pre-admitted to the MSc Data Engineering for AI, March 2027.
+Data Engineering Intern at Boston University School of Medicine. Building a digital pathology pipeline that processes 1,000+ whole-slide images across three encoder models on GPU infrastructure. 33 tests, CI on every push.
 
-I build data systems that reach production. Two of them crashed this year. I diagnosed and fixed both in production. The READMEs document what broke and why, because that is the part worth reading.
+Final-year BSc Computer Science & Engineering, DSTI Paris. Pre-admitted to MSc Data Engineering for AI (March 2027).
 
-Open to Data Engineering or Backend Engineering roles. Internship from January 2027, apprenticeship from January 2027.
+Six data systems built independently this year: Kafka event streaming, Spark on AWS with Terraform, Airflow orchestration, FastAPI + Grafana observability, DuckDB analytics. 300+ tests across all repos.
+
+Open to Data Engineering, AI/ML Engineering, or Backend Engineering roles. Internship or apprenticeship from January 2027.
 
 ---
 
