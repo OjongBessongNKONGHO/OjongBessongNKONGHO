@@ -14,7 +14,12 @@ Open to Data Engineering, AI/ML Engineering, or Backend Engineering roles. Inter
 
 ### [WSI Processing Pipeline](https://github.com/OjongBessongNKONGHO/wsi-processing-pipeline) *(current — BU internship)*
 
-Whole-slide pathology images are gigapixel-scale and cannot be fed directly into any model. This pipeline segments the tissue, extracts patches, and runs them through UNI2-h and TITAN to produce feature embeddings for downstream lung cancer classification. Runs on BU's HPC cluster with SGE job submission. Config-driven so lab members edit a CSV file instead of memorizing CLI flags. Validates every parameter against an encoder registry of 33 patch encoders and 12 slide encoders before touching a GPU. 33 tests.
+Whole-slide pathology images are gigapixel-scale and cannot be fed directly into any model. This pipeline segments the tissue, extracts patches, and runs them through CONCH v1.5, UNI v2, and TITAN to produce feature embeddings for downstream lung cancer classification. Runs on BU's HPC cluster with SGE job submission. Config-driven so lab members edit a CSV file instead of memorizing CLI flags. Validates every parameter against an encoder registry of 33 patch encoders and 12 slide encoders before touching a GPU. 33 tests.
+
+### [VI-LUAD Classifier](https://github.com/OjongBessongNKONGHO/vi-luad-classifier) *(current — BU internship)*
+
+Downstream model for the WSI pipeline. Graph Perceiver network that takes CONCH patch embeddings, builds spatial graphs, and classifies lung adenocarcinoma slides for visceral pleural invasion. Patient-stratified 5-fold cross-validation with seed ensembling, temperature calibration, and early stopping. Currently running positive control experiments on BU's HPC cluster.
+
 
 ### [Spark Streaming Pipeline](https://github.com/OjongBessongNKONGHO/spark-streaming-pipeline)
 
@@ -42,7 +47,7 @@ FastAPI service on PostgreSQL, authenticated and rate-limited. Full async SQLAlc
 
 ### Stack
 
-Python, SQL, FastAPI, SQLAlchemy 2.0 async, Pydantic v2, fastavro, Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB, Prometheus, Grafana, AWS, Terraform, Docker, GitHub Actions, PostgreSQL, psycopg3, SLURM, HPC, TRIDENT, Patho-Bench
+Python, SQL, FastAPI, SQLAlchemy 2.0 async, Pydantic v2, fastavro, Kafka, Spark, Airflow, dbt, Delta Lake, DuckDB, Prometheus, Grafana, AWS, Terraform, Docker, GitHub Actions, PostgreSQL, psycopg3, PyTorch, PyG, SGE, HPC, TRIDENT, Patho-Bench
 
 Currently Data Engineering Intern at Boston University School of Medicine, deploying computational pathology pipelines on a Linux HPC cluster. Previously Data Analyst Intern at the same lab, processing bulk RNA-seq datasets in R. Reproducibility requirements were strict enough that cutting corners showed up immediately in the results.
 
